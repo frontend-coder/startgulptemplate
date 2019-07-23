@@ -1,0 +1,56 @@
+.ic {
+    font-size: 10px;
+}
+
+.ic:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("svg.svg");
+    background-repeat: no-repeat;
+    background-size: 12.8em 51.2em;
+}
+
+.no-svg .ic:before {
+    background-image: url("../svg.png");
+}
+
+
+
+  .ic.i-sp-opti1-01:before {
+      background-position: 0em 0em;
+      width: 12.8em;
+      height: 12.8em;
+  }
+
+
+
+
+  .ic.i-sp-opti1-02:before {
+      background-position: 0em -12.8em;
+      width: 12.8em;
+      height: 12.8em;
+  }
+
+
+
+
+  .ic.i-sp-opti1-03:before {
+      background-position: 0em -25.6em;
+      width: 12.8em;
+      height: 12.8em;
+  }
+
+
+
+
+  .ic.i-sp-opti1-04:before {
+      background-position: 0em -38.4em;
+      width: 12.8em;
+      height: 12.8em;
+  }
+
+
+
+
+
