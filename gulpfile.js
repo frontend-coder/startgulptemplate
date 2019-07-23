@@ -18,6 +18,12 @@ const gulpUtil          = require('gulp-util');
 // npm i --save-dev browser-sync
 const browserSync           = require('browser-sync').create();
 
+// npm i --save-dev del
+const del               = require('del');
+
+
+
+
 
 gulp.task('styles', () => {
   var sassFiles = [
@@ -70,9 +76,8 @@ gulp.task('serve', done => {
     },
     notify: false,
     open:true,
-        // open: false,
-        // online: false, // Work Offline Without Internet Connection
-        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+    // online: false, // Work Offline Without Internet Connection
+    // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
       });
   browserSync.watch('app', browserSync.reload);
   done();
@@ -98,5 +103,58 @@ gulp.task('watch', done => {
 });
 
 gulp.task('default', gulp.parallel(['styles','scripts', 'watch', 'serve']));
+
+function cleaner() {
+  return del('dist/*');
+}
+
+function movefile() {
+	return gulp.src('app/*.html')
+       .pipe(gulp.dest('dist'));
+     }
+
+     function movefilother() {
+      return gulp.src('app/*.{php,access}')
+      .pipe(gulp.dest('dist'));
+    }
+
+    function movejs() {
+      return gulp.src('app/js/scripts.min.js')
+  //  .pipe(uglify()) // Mifify js (opt.)
+    .pipe(gulp.dest('dist/js'))
+    .pipe(filesize()).on('error', gulpUtil.log);
+  }
+  function movecss() {
+    return gulp.src('app/css/*')
+ //  .pipe(cleancss( {level: { 2: { specialComments: 0 } } })) // Opt., comment out when debugging
+   .pipe(gulp.dest('dist/css'))
+   .pipe(filesize()).on('error', gulpUtil.log);
+ }
+
+ function moveimages() {
+  return gulp.src('app/img/**/*.{jpg,svg,png,ico}')
+.pipe(gulp.dest('dist/img'))
+.pipe(filesize()).on('error', gulpUtil.log);
+}
+
+// function compressimg() {
+//  return gulp.src('app/beforecompress/**/*')
+//  .pipe(tingpng('8cVpmwZQXvCdnVDk2FqdbWVk5RfJBS9Z'))
+//  .pipe(gulp.dest('dist/aftercompress'));
+// }
+
+// gulp.task('compressimg', gulp.series(compressimg));
+gulp.task('cleanbuild', cleaner);
+gulp.task('movefile', movefile);
+gulp.task('movefilother', movefilother);
+gulp.task('movejs', movejs);
+gulp.task('movecss', movecss);
+gulp.task('moveimages', gulp.series(moveimages));
+
+gulp.task('build', gulp.series('cleanbuild', gulp.parallel('movefile', 'movefilother', 'movejs', 'movecss', 'moveimages' )));
+
+
+
+
 
 
