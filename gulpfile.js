@@ -30,8 +30,8 @@ const ftp               = require('gulp-ftp');
 const vinyFTP           = require( 'vinyl-ftp' );
 
 
-gulp.task('styles', () => {
-	var sassFiles = [
+function styles() {
+	let sassFiles = [
 	'app/scss/libs.scss',
 	'app/scss/main.scss'
 	];
@@ -55,14 +55,14 @@ gulp.task('styles', () => {
 .pipe(sourcemaps.write(''))
 //.pipe(notify("Create file: <%= file.relative %>!"))
 .pipe(gulp.dest('app/css'));
-});
+};
 
-gulp.task('scripts', (done) => {
+function scripts() {
 	var jsFiles = [
-	'app/libs/plagins/jquery341.js',
-'app/libs/plagins/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js',
-'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
-'app/libs/plagins/slick/slick.min.js',
+	'app/libs/plagins/jquery.min.js',
+// 'app/libs/plagins/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js',
+// 'app/libs/plagins/magnific-popup/jquery.magnific-popup.min.js',
+// 'app/libs/plagins/slick/slick.min.js',
 'app/libs/common.js'
 // Always at the end
 ];
@@ -75,14 +75,14 @@ return gulp.src(jsFiles)
 			}})
 	}))
 .pipe(rigger())
-.pipe(concat('scripts.min.js').on('error', done))
+.pipe(concat('scripts.min.js'))
 //	.pipe(uglify()) // Mifify js (opt.)
 .pipe(notify("Create file: <%= file.relative %>!").on('error', gulpUtil.log) )
 .pipe(gulp.dest('app/js'))
 .pipe(filesize()).on('error', gulpUtil.log);
-});
+};
 
-gulp.task('serve', done => {
+function serve() {
 	browserSync.init({
 		server: {
 			baseDir: './app'
@@ -93,29 +93,23 @@ gulp.task('serve', done => {
     // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
 });
 	browserSync.watch('app', browserSync.reload);
-	done();
-});
 
-gulp.task('code', done => {
+};
+
+function code() {
 	return gulp.src(['app/*.html', 'app/*php']);
-	done();
-});
+};
 
-gulp.task('picture', done => {
+function picture() {
 	return gulp.src(['app/img/*.{jpg,png,svg,ico}']);
-	done();
-});
+};
 
-
-gulp.task('watch', done => {
+function watch() {
 	gulp.watch("app/scss/**/*.scss", gulp.series('styles'));
 	gulp.watch("app/libs/**/*.js", gulp.series('scripts'));
 	gulp.watch("app/*.html", gulp.series('code'));
 	gulp.watch("app/img/**/*.*", gulp.series('picture'));
-	done();
-});
-
-gulp.task('default', gulp.parallel(['styles','scripts', 'watch', 'serve']));
+};
 
 function cleaner() {
 	return del('dist/*');
@@ -150,6 +144,15 @@ function moveimages() {
 	.pipe(gulp.dest('dist/img'))
 	.pipe(filesize()).on('error', gulpUtil.log);
 }
+
+gulp.task('styles', styles);
+gulp.task('scripts', scripts);
+gulp.task('serve', serve);
+gulp.task('code', code);
+gulp.task('picture', picture);
+gulp.task('watch', watch);
+
+gulp.task('default', gulp.parallel(['styles','scripts', 'watch', 'serve']));
 
 // gulp.task('compressimg', gulp.series(compressimg));
 gulp.task('cleanbuild', cleaner);
