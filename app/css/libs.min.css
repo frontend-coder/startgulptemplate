@@ -5011,7 +5011,7 @@ img.mfp-img
 @font-face
 {
   font-family: "OpenSansRegular";
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   font-display: fallback;
@@ -5020,7 +5020,7 @@ img.mfp-img
 @font-face
 {
   font-family: "RobotoCondensedBold";
-  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  src: url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff2") format("woff2"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -5084,11 +5084,27 @@ body input:required:valid, body textarea:required:valid
 {
 }
 
+@media only screen and (max-width: 768px)
+{
+}
+
+@media only screen and (max-width: 667px)
+{
+}
+
 @media only screen and (max-width: 600px)
 {
 }
 
 @media only screen and (max-width: 480px)
+{
+}
+
+@media only screen and (max-width: 384px)
+{
+}
+
+@media only screen and (max-width: 320px)
 {
 }
 

@@ -3,31 +3,13 @@
 $body_fontsize: 16px;
 $body_lineheight: 1.42;
 
-
-
 $placeholdercolortext: #202020;
 $white_color: #fff;
 $default-font: "OpenSansRegular", sans-serif;
 $accent_color: orange;
 $body_color_text: #000000;
 
-
-
-
 // эти переменные временные по внутренему контенту
-
-
-$color_font_gray: #6c6c6c;
-$color_font_title:#222222;
-$color_cycle:#fcac45;
-$color_font_list:#5a5a5a;
-$color_form: #202020;
-$color_button: #FF8941;
-$color_hoverbutton: #FB6C14;
-$grey_color: #95989A;
-$accent: orange;
-$text: #333;
-
 
 
 
@@ -106,7 +88,6 @@ width: $lineheight * 1rem;
   @return $size / $body_fontsize * 1rem;
 }
 
-
 // @include opacity(50);
 @mixin opacity($p) {
  opacity: $p*0.01;
@@ -117,16 +98,9 @@ width: $lineheight * 1rem;
  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$p)";
 }
 
-
-
-
-
 //Эта функция “нарисует” объекту вертикальный кроссбраузерный CSS3 градиент. Передаем верхний цвет и нижний.
 
 // @include bg(#aaaaaa, #efefef);
-
-
-
 
 @mixin bg($top, $btm) {
  background: $top;
@@ -138,8 +112,6 @@ width: $lineheight * 1rem;
  background: linear-gradient(to bottom, $top 0%,$btm 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$btm',GradientType=0 );
 }
-
-
 
 
 // @include linx (red, blue, black, green);
@@ -159,25 +131,7 @@ width: $lineheight * 1rem;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// киксины для создания треугольников
-
-
-
-
-// как использовать
+// киксины для создания треугольников как использовать
 // .nameclass {
 //  @include triangle(25px, up, red);
 //   @include triangle(25px, down, red);
@@ -309,7 +263,4 @@ border-left: $arrowborder solid $color; /* Добавляем треугольн
     border-left: $width solid transparent;
   }
 }
-
-
-
 

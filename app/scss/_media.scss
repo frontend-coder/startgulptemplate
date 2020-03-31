@@ -48,7 +48,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+/* делать это разрешение */
 }
 
 
@@ -76,7 +76,7 @@
 }
 
 @media only screen and (max-width: 667px) {
-
+/* делать это разрешение */
 
 
 }
@@ -125,7 +125,7 @@
 }
 
 @media only screen and (max-width: 384px) {
-
+/* делать это разрешение */
 
 
 }
@@ -143,7 +143,7 @@
 }
 
 @media only screen and (max-width: 320px) {
-
+/* делать это разрешение */
 
 
 }
@@ -155,27 +155,21 @@
 
 
 
-/*
-// Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
 	}
-/*
-// Medium devices (tablets, 768px and up)
- */
+/* Medium devices (tablets, 768px and up)  */
 @media (min-width: 768px) {
 
 	 }
-/*
-// Large devices (desktops, 992px and up)
- */
+/* Large devices (desktops, 992px and up)  */
 @media (min-width: 992px) {
 
 
 	}
-/*
-// Extra large devices (large desktops, 1200px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 
-	}
+}
