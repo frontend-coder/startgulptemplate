@@ -2,18 +2,20 @@
 
 // эти свойства по default
 *::-webkit-input-placeholder {
-color:#202020;
-opacity: 1;
+	color: #202020;
+	opacity: 1;
 }
 
 *::-moz-placeholder {
-color: $placeholdercolortext;
+	color: $placeholdercolortext;
 	opacity: 1;
 }
+
 *::-ms-input-placeholder {
-color: $placeholdercolortext;
+	color: $placeholdercolortext;
 	opacity: 1;
 }
+
 ::placeholder {
 	color: $placeholdercolortext;
 }
@@ -25,15 +27,15 @@ color: $placeholdercolortext;
 
 @import "fonts";
 
-html{
-width: 100%;
-/* height: 100%; */
-font-size: $body_fontsize;
-line-height: $body_lineheight;
-margin:0;
-padding:0;
--webkit-backface-visibility:hidden;
-/* overflow-x: hidden; */
+html {
+	width: 100%;
+	/* height: 100%; */
+	font-size: $body_fontsize;
+	line-height: $body_lineheight;
+	margin: 0;
+	padding: 0;
+	-webkit-backface-visibility: hidden;
+	/* overflow-x: hidden; */
 }
 
 body {
@@ -45,12 +47,16 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $body_color_text;
-	input, textarea {
+
+	input,
+	textarea {
 		border: #666 1px solid;
 		outline: none;
+
 		&:focus:required:invalid {
 			border-color: red;
 		}
+
 		&:required:valid {
 			border-color: green;
 		}
@@ -61,9 +67,17 @@ body {
 	display: block;
 	max-width: 100%;
 	height: auto;
+
 	&.img-width {
 		width: 100%;
 	}
+}
+
+.container {
+	border: 1px solid red;
+	min-height: 230px;
+
+	background-color: green;
 }
 
 
@@ -71,14 +85,4 @@ body {
 @import "allstyle"; // стили шапки сайта
 
 @import "footer"; // стили шапки сайта
-@import "media"; // Always at the end
-
-
-
-
-
-
-
-
-
-
+@import "media"; // Always at the en

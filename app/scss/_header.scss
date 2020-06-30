@@ -1,0 +1,26 @@
+.test_class {
+  display: inline;
+  display: grid;
+  display: flex;
+}
+
+.container {
+  border: 1px solid red;
+  min-height: 230px;
+
+  background-color: green;
+}
+
+.container .row {
+  border: 20px solid black;
+  margin: 20px;
+}
+
+.container .row h2 {
+  font-size: 34px;
+  color: #fff;
+  padding-bottom: 300px;
+}
+.container .row h2 {
+padding: 40px;
+}
