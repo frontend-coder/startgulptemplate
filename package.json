@@ -1,7 +1,7 @@
 {
   "name": "startgulp4lite",
   "version": "1.0.0",
-  "description": "Простой шаблон для сборки шаблона  ",
+  "description": "Базовый стартовый шаблон для выполнения верстки под заказ",
   "main": "gulpfile.js",
   "scripts": {
     "lint": "eslint ./app",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/frontend-coder/startgulp4Lite.git"
   },
-  "author": "Олег Василенко",
+  "author": "Игорь Васильченко",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/frontend-coder/startgulp4Lite/issues"
