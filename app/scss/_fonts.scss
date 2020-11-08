@@ -1,24 +1,26 @@
 /* font-family: "OpenSansRegular"; */
 @font-face {
-	font-family: "OpenSansRegular";
-	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"),
-		url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
-		url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-		font-display: fallback;
+  src:
+    url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-family: "OpenSansRegular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-	font-family: "RobotoCondensedBold";
-	src: url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff2") format("woff2"),
-		url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"),
-		url("../fonts/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
+  src:
+    url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"),
+    url("../fonts/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
+  font-family: "RobotoCondensedBold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 // 100 Extra Light or Ultra Light
@@ -31,8 +33,6 @@
 // 800 Black, Extra Bold or Heavy
 // 900 Extra Black, Fat, Poster or Ultra Black
 
-
-
 // 100 — тонкое начертание;
 // 200 — сверхсветлое;
 // 300 — светлое;
@@ -43,7 +43,5 @@
 // 800 — сверхжирное;
 // 900 — тяжёлое.
 // https://webfonts.pro/
-
-
 
 // @include font-face("Roboto", "../fonts/roboto/roboto-bold-italic", 700, italic, "maximum" );

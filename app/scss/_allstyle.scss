@@ -1,0 +1,20 @@
+.header_fon {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  min-height: 400px;
+  background: #000000 url("../img/favicon/favicon.ico");
+  background-position: center top;
+  background-size: 20% 20%;
+}
+
+.header_fon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 45rem;
+  line-height: 1.2;
+  color: #9090dd;
+  background-color: #fff000;
+}

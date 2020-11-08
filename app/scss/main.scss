@@ -1,87 +1,86 @@
 @import "var";
 
 // эти свойства по default
-*::-webkit-input-placeholder {
-	color: #202020;
-	opacity: 1;
+*::input-placeholder {
+  color: #202020;
+  opacity: 1;
 }
 
-*::-moz-placeholder {
-	color: $placeholdercolortext;
-	opacity: 1;
+*::placeholder {
+  color: $placeholdercolortext;
+  opacity: 1;
 }
 
-*::-ms-input-placeholder {
-	color: $placeholdercolortext;
-	opacity: 1;
+*::input-placeholder {
+  color: $placeholdercolortext;
+  opacity: 1;
 }
 
 ::placeholder {
-	color: $placeholdercolortext;
+  color: $placeholdercolortext;
 }
 
 ::selection {
-	background-color: $accent_color;
-	color: $white_color;
+  color: $white_color;
+  background-color: $accent_color;
 }
 
 @import "fonts";
 
 html {
-	width: 100%;
-	/* height: 100%; */
-	font-size: $body_fontsize;
-	line-height: $body_lineheight;
-	margin: 0;
-	padding: 0;
-	-webkit-backface-visibility: hidden;
-	/* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  /* height: 100%; */
+  font-size: $body_fontsize;
+  line-height: $body_lineheight;
+  backface-visibility: hidden;
+
+  /* overflow-x: hidden; */
 }
 
 body {
-	font-size: $body_fontsize;
-	min-width: 320px;
-	opacity: 1;
-	position: relative;
-	line-height: $body_lineheight;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $body_color_text;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-family: $default-font;
+  font-size: $body_fontsize;
+  line-height: $body_lineheight;
+  color: $body_color_text;
+  opacity: 1;
 
-	input,
-	textarea {
-		border: #666 1px solid;
-		outline: none;
+  input,
+  textarea {
+    outline: none;
+    border: #666666 1px solid;
 
-		&:focus:required:invalid {
-			border-color: red;
-		}
+    &:required:valid {
+      border-color: green;
+    }
 
-		&:required:valid {
-			border-color: green;
-		}
-	}
+    &:focus:required:invalid {
+      border-color: red;
+    }
+  }
 }
 
 .img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  height: auto;
+  max-width: 100%;
 
-	&.img-width {
-		width: 100%;
-	}
+  &.img-width {
+    width: 100%;
+  }
 }
 
 .container {
-	border: 1px solid red;
-	min-height: 230px;
-
-	background-color: green;
+  border: 1px solid #ff0000;
+  min-height: 230px;
+  background-color: #008000;
 }
 
-
-@import "header"; // стили шапки сайта
+@import url("_header.scss");
 @import "allstyle";
-
 @import "media"; // Always at the en

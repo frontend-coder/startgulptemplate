@@ -1,6 +1,6 @@
 {
   //"react-app",
-  "extends": [ "prettier", "airbnb-base", "plugin:vue/recommended"],
+  "extends": [ "airbnb-base"],
   "env": {
     "browser": true,
     "es6": true,
@@ -17,7 +17,7 @@
     "sourceType": "module"
     //   "parser": "babel-eslint"
   },
-  "plugins": ["vue", "react", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "windows"],

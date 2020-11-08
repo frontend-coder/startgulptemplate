@@ -1,11 +1,14 @@
 {
-  "name": "startgulp4lite",
+  "name": "startgulptemplate",
   "version": "1.0.0",
   "description": "Базовый стартовый шаблон для выполнения верстки под заказ",
   "main": "gulpfile.js",
   "scripts": {
-    "lint": "eslint ./app",
-    "lint:fix": "eslint ./app --fix"
+    "eslint": "eslint ./app/libs/common.js",
+    "eslint:fix": "eslint ./app/**/*.js --fix",
+    "stylelint": "stylelint ./app/scss/*.scss",
+    "stylelint:fix": "stylelint ./app/scss/*.scss --fix",
+    "stylelint:cache": "stylelint --cache ./app/**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -18,17 +21,15 @@
   },
   "homepage": "https://github.com/frontend-coder/startgulp4Lite#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-vue": "^6.2.2",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
@@ -39,11 +40,18 @@
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^2.0.0",
     "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-comments": "^2.5.2",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "prettier": "^2.0.2"
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0"
   }
 }
