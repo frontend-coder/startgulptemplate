@@ -923,5 +923,5 @@ body input:focus:required:invalid,body textarea:focus:required:invalid{border-co
 .img-responsive.img-width{width:100%}
 .container{border:1px solid red;min-height:230px;background-color:green}
 .header_fon{position:relative;top:0;bottom:0;min-height:400px;background:url(../img/favicon/favicon.ico) center top/20% 20% #000}
-.header_fon:before{content:"";position:absolute;left:0;top:0;font-size:45rem;line-height:1.2;color:#9090dd;background-color:#fff000}
+.header_fon::before{content:"";position:absolute;left:0;top:0;font-size:45rem;line-height:1.2;color:#9090dd;background-color:#fff000}
 /*# sourceMappingURL=libs.min.css.map */
