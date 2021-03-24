@@ -2,16 +2,11 @@
 
 // эти свойства по default
 *::input-placeholder {
-  color: #202020;
-  opacity: 1;
-}
-
-*::placeholder {
   color: $placeholdercolortext;
   opacity: 1;
 }
 
-*::input-placeholder {
+*::placeholder {
   color: $placeholdercolortext;
   opacity: 1;
 }
@@ -56,11 +51,11 @@ body {
     border: #666666 1px solid;
 
     &:required:valid {
-      border-color: green;
+      border-color: #008000;
     }
 
     &:focus:required:invalid {
-      border-color: red;
+      border-color: #ff0000;
     }
   }
 }
@@ -81,6 +76,6 @@ body {
   background-color: #008000;
 }
 
-@import url("_header.scss");
+@import "header";
 @import "allstyle";
 @import "media"; // Always at the en

@@ -772,7 +772,7 @@
 		"scss/operator-no-unspaced": true,
 		"scss/partial-no-import": null,
 		"scss/percent-placeholder-pattern": null,
-		"scss/selector-no-redundant-nesting-selector": true,
+		"scss/selector-no-redundant-nesting-selector": null,
 		"plugin/declaration-block-no-ignored-properties": [
 			true,
 			{

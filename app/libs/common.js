@@ -1,5 +1,3 @@
-// $(document).ready(function(){
-
-$(document).ready(() => {
-
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('скрипт работает');
 });
