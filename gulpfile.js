@@ -6,16 +6,14 @@ const concat                                  = require('gulp-concat');
 let uglify                                    = require('gulp-uglify-es').default;
 const rigger                                  = require('gulp-rigger');
 
-const sass                                    = require('gulp-sass');
-const autoprefixer                            = require('gulp-autoprefixer');
-const sourcemaps                              = require('gulp-sourcemaps');
-const rename                                  = require('gulp-rename');
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const rename = require('gulp-rename');
 
-
-const stripCssComments                        = require('gulp-strip-css-comments');
-const cleancss                                = require('gulp-clean-css');
-const strip                                   = require('gulp-strip-comments');
-const imagemin                                = require('gulp-imagemin');
+const stripCssComments = require('gulp-strip-css-comments');
+const cleancss = require('gulp-clean-css');
+const strip = require('gulp-strip-comments');
 const newer                                   = require('gulp-newer');
 const del                                     = require('del');
 const plumber                                 = require('gulp-plumber');
@@ -81,7 +79,7 @@ function scripts() {
 function images() {
 	return src('app/img/**/*')
 		.pipe(newer('dist/img/'))
-		.pipe(imagemin())
+
 		.pipe(dest('dist/img/'))
 }
 
