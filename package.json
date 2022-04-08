@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontend-coder/startgulp4Lite.git"
+    "url": "git+https://github.com/frontend-coder/startgulptemplate.git"
   },
   "author": "Игорь Васильченко",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/frontend-coder/startgulp4Lite/issues"
+    "url": "https://github.com/frontend-coder/startgulptemplate/issues"
   },
-  "homepage": "https://github.com/frontend-coder/startgulp4Lite#readme",
+  "homepage": "https://github.com/frontend-coder/startgulptemplate#readme",
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "del": "^6.0.0",
@@ -36,7 +36,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
