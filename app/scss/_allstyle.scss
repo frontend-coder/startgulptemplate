@@ -1,5 +1,18 @@
-
-/*  stylelint-disable-next-line at-rule-blacklist */
 .block {
+  left: 200px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  color: #000000;
+  background-color: antiquewhite;
+}
 
+.nav__container {
+  position: relative;
+  left: 300px;
+  top: 20px;
+  z-index: inherit;
+  width: 400px;
+  height: 200px;
 }

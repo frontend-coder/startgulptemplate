@@ -458,12 +458,14 @@
 			}
 		],
 		"at-rule-disallowed-list": [
-			"extend"
+			"extend",
+			"keyframes"
 		],
 		"at-rule-allowed-list": [
-			"extend","keyframes"
-				],
-			"at-rule-empty-line-before": [
+			"extend",
+			"keyframes"
+		],
+		"at-rule-empty-line-before": [
 			"always",
 			{
 				"except": [
@@ -658,7 +660,7 @@
 		"selector-list-comma-space-after": "always-single-line",
 		"selector-list-comma-space-before": "never",
 		"selector-max-attribute": null,
-		"selector-max-class": null, 
+		"selector-max-class": null,
 		"selector-max-combinators": null,
 		"selector-max-compound-selectors": null,
 		"selector-max-empty-lines": 0,
@@ -724,7 +726,6 @@
 				]
 			}
 		],
-
 		"scss/dollar-variable-no-missing-interpolation": null,
 		"scss/dollar-variable-pattern": null,
 		"scss/double-slash-comment-empty-line-before": [
@@ -755,5 +756,8 @@
 			}
 		]
 	},
-	 "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-prettier"
+	]
 }

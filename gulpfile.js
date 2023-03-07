@@ -50,6 +50,7 @@ function styles() {
     ) // Opt., comment out when debugging
     .pipe(sourcemaps.write(''))
     .pipe(dest('app/css/'));
+  //  .pipe(browserSync.stream());
 }
 
 function browsersync() {
@@ -66,6 +67,7 @@ function scripts() {
     //	'app/libs/plugins/page-scroll-to-id-master/js/minified/jquery.malihu.PageScroll2id.min.js',
     //	'app/libs/plugins/magnific-popup/jquery.magnific-popup.min.js',
     //	'app/libs/plugins/slick/slick.min.js',
+    //node-modules/swiper/swiper-bundle.js,
     'app/libs/common.js',
   ])
     .pipe(strip())
@@ -94,6 +96,7 @@ function startwatch() {
   watch('app/**/*.html').on('change', browserSync.reload);
   watch('app/**/*.php').on('change', browserSync.reload);
   watch('app/css/*.css').on('change', browserSync.reload);
+  //  watch('app/js/*.js').on('change', browserSync.reload);
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
 }
 
