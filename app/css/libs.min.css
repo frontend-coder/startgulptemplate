@@ -22,7 +22,7 @@ progress{vertical-align:baseline}
 [type=search]::-webkit-search-decoration{-webkit-appearance:none;appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;appearance:button;font:inherit}
 summary{display:list-item}
-html{box-sizing:border-box;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;font-family:sans-serif;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;scroll-behavior:smooth;-ms-overflow-style:scrollbar;margin:0;padding:0;width:100%;font-size:16px;line-height:1.42;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+html{box-sizing:border-box;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;font-family:sans-serif;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;scroll-behavior:smooth;-ms-overflow-style:scrollbar;margin:0;padding:0;width:100%;font-size:16px;line-height:1.42;backface-visibility:hidden}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:400;text-align:left;background-color:#fff;position:relative;overflow-x:hidden;min-width:320px;font-family:OpenSansRegular,sans-serif;font-size:16px;line-height:1.42;color:#000;opacity:1}
 .container,.container-fluid{margin-right:auto;margin-left:auto;padding-right:15px;padding-left:15px;width:100%}
 @media (min-width:576px){
@@ -56,7 +56,8 @@ body input:focus:required:invalid,body textarea:focus:required:invalid{border-co
 .img-responsive{display:block;height:auto;max-width:100%}
 .img-responsive.img-width{width:100%}
 .header__fon{border-bottom:1px solid #333;min-height:600px;background-color:#913b4c}
-.container{border:1px solid #0ff;min-height:230px;background-color:green}
+.container{border:1px solid #0ff;padding:0;width:100px;min-height:230px;background-color:green}
+.nav__container{bottom:0;border:1px solid #0ff;padding:20px;color:#0ff}
 .block{left:200px;top:0;bottom:0;display:flex;text-align:center;color:#000;background-color:#faebd7}
 .nav__container{position:relative;left:300px;top:20px;z-index:inherit;width:400px;height:200px}
 /*# sourceMappingURL=libs.min.css.map */

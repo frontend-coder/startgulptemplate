@@ -6,6 +6,17 @@
 
 .container {
   border: 1px solid #00ffff;
+  padding: 0;
+  width: 100px;
   min-height: 230px;
   background-color: #008000;
+}
+
+.nav__container {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  border: #00ffff 1px solid;
+  padding: 20px;
+  color: #00ffff;
 }
