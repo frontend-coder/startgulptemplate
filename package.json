@@ -56,11 +56,18 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "prettier": "^2.8.8",
-    "sass": "^1.69.4"
+    "prettier": "^3.0.0",
+    "sass": "^1.69.4",
+    "stylelint": "^15.8.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.2.1",
+    "stylelint-prettier": "^4.0.2"
   },
   "dependencies": {
     "browserslist": "^4.22.1",
-    "caniuse-lite": "^1.0.30001551"
+    "caniuse-lite": "^1.0.30001553"
   }
 }

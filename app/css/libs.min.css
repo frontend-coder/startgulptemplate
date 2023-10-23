@@ -60,4 +60,5 @@ body input:focus:required:invalid,body textarea:focus:required:invalid{border-co
 .nav__container{bottom:0;border:1px solid #0ff;padding:20px;color:#0ff}
 .block{left:200px;top:0;bottom:0;display:flex;text-align:center;color:#000;background-color:#faebd7}
 .nav__container{position:relative;left:300px;top:20px;z-index:inherit;width:400px;height:200px}
+.jkjk{position:relative;left:0;right:78px;top:89px;z-index:34;padding:30px;width:299px;font-size:34px;line-height:4;pointer-events:painted}
 /*# sourceMappingURL=libs.min.css.map */
