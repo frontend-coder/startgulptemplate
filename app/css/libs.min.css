@@ -55,9 +55,9 @@ body input:required:valid,body textarea:required:valid{border-color:green}
 body input:focus:required:invalid,body textarea:focus:required:invalid{border-color:red}
 .img-responsive{display:block;height:auto;max-width:100%}
 .img-responsive.img-width{width:100%}
-.header__fon{border-bottom:1px solid #333;min-height:600px;background-color:#913b4c}
-.container{border:1px solid #0ff;padding:0;width:100px;min-height:230px;background-color:green}
-.nav__container{bottom:0;border:1px solid #0ff;padding:20px;color:#0ff}
+.header__fon{min-height:600px;background-color:#913b4c;border-bottom:1px solid #333}
+.container{width:100px;min-height:230px;padding:0;background-color:green;border:1px solid #0ff}
+.nav__container{bottom:0;padding:20px;color:#00f;border:1px solid #0ff}
 .block{left:200px;top:0;bottom:0;display:flex;text-align:center;color:#000;background-color:#faebd7}
 .nav__container{position:relative;left:300px;top:20px;z-index:inherit;width:400px;height:200px}
 .jkjk{position:relative;left:0;right:78px;top:89px;z-index:34;padding:30px;width:299px;font-size:34px;line-height:4;pointer-events:painted}

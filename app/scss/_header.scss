@@ -1,22 +1,22 @@
 .header__fon {
-  border-bottom: 1px solid #333333;
   min-height: 600px;
   background-color: #913b4c;
+  border-bottom: 1px solid #333333;
 }
 
 .container {
-  border: 1px solid #00ffff;
-  padding: 0;
   width: 100px;
   min-height: 230px;
+  padding: 0;
   background-color: #008000;
+  border: 1px solid #00ffff;
 }
 
 .nav__container {
   position: relative;
   top: 0;
   bottom: 0;
-  border: #00ffff 1px solid;
   padding: 20px;
-  color: #00ffff;
+  color: #0000ff;
+  border: #00ffff 1px solid;
 }

@@ -93,6 +93,16 @@ function scripts() {
     //node-modules/swiper/swiper-bundle.js,
     'app/libs/common.js',
   ])
+    .pipe(
+      plumber({
+        errorHandler: notify.onError(function (err) {
+          return {
+            title: 'Scripts',
+            message: err.message,
+          };
+        }),
+      })
+    )
     .pipe(strip())
     .pipe(rigger())
     .pipe(concat('scripts.min.js'))
